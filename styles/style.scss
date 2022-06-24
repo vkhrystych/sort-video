@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$dark-blue: #002149;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.header-sort-logo {
+  max-width: 118px;
+  position: absolute;
+  top: 19px;
+  left: 39px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1205px;
+  position: relative;
+
+  @media (max-width: 1100px) {
+    padding: 0 20px;
+  }
+
+  &_big {
+    max-width: 1450px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.intro {
+  height: 100vh;
+  width: 100%;
+
+  @media (max-width: 1100px) {
+    height: 500px;
+  }
+
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+}
+
+.ellipse {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.ellipse-icon {
+  width: 240px;
+  height: 295px;
+
+  @media (max-width: 1400px) {
+    width: 140px;
+    height: 195px;
+  }
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.info {
+  padding-top: 40px;
+  padding-bottom: 200px;
+
+  &__ellipse {
+    &_1 {
+      width: 379px;
+      height: 588px;
+      background-image: url("../img/ellipses/circles-1.png");
+      right: 0;
+      top: 100px;
+
+      @media (max-width: 1400px) {
+        width: 279px;
+      }
+
+      @media (max-width: 1100px) {
+        width: 179px;
+      }
+
+      @media (max-width: 768px) {
+        width: 140px;
+        top: 350px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 65px;
+    line-height: 93px;
+    color: $dark-blue;
+    margin-bottom: 119px;
+
+    @media (max-width: 1100px) {
+      font-size: 45px;
+      line-height: normal;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+  }
+
+  h2 {
+    font-size: 42px;
+    line-height: 51px;
+    color: $dark-blue;
+    margin-bottom: 64px;
+
+    @media (max-width: 1100px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__meet {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+
+    &-text {
+      color: $dark-blue;
+      font-size: 42px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__description {
+    max-width: 597px;
+    color: $dark-blue;
+    font-size: 26px;
+    margin-bottom: 38px;
+    line-height: 31.69px;
+
+    @media (max-width: 1100px) {
+      font-size: 20px;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+
+    &_bold {
+      font-weight: 600;
+    }
+  }
+
+  &__disclaimer {
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 32px;
+    color: $dark-blue;
+    max-width: 1019px;
+
+    @media (max-width: 1100px) {
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: normal;
+    }
+  }
+}
+
+.benefits {
+  text-align: center;
+  padding-bottom: 150px;
+
+  @media (max-width: 1100px) {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: $dark-blue;
+    margin-bottom: 54px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 276px;
+
+    @media (max-width: 1100px) {
+      margin-bottom: 50px;
+    }
+
+    img {
+      max-width: 140px;
+      margin-bottom: 31px;
+
+      @media (max-width: 1100px) {
+        max-width: 110px;
+      }
+    }
+
+    &-heading {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      color: $dark-blue;
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: $dark-blue;
+    }
+  }
+}
+
+.future {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__ellipse {
+    background-image: url("../img/ellipses/icon_1.png");
+    left: 0;
+    top: 0px;
+  }
+
+  h2 {
+    max-width: 629px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: $dark-blue;
+    margin-bottom: 60px;
+  }
+
+  &__benefits {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
+  }
+
+  &__benefit {
+    flex-shrink: 0;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 34px;
+    color: $dark-blue;
+    padding: 32px;
+    padding-bottom: 72px;
+    max-width: 450px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &-text_bold {
+      font-weight: 600;
+    }
+
+    &_left {
+      margin-right: 60px;
+
+      @media (max-width: 1100px) {
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.about {
+  color: $dark-blue;
+  text-align: center;
+  max-width: 760px;
+  padding-bottom: 150px;
+
+  &__ellipse {
+    background-image: url("../img/ellipses/icon_2.png");
+    right: 0;
+    top: 50px;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+
+    @media (max-width: 1100px) {
+      font-size: 20px;
+    }
+
+    &_bold {
+      font-weight: 600;
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  padding-bottom: 131px;
+  justify-content: center;
+
+  &__content {
+    max-width: 960px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+    background: #00214a;
+    backdrop-filter: blur(172px);
+    color: #fff;
+    padding: 40px 90px;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+      padding: 40px;
+    }
+  }
+}
+
+.study {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 130px;
+  color: $dark-blue;
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  &__ellipse {
+    background-image: url("../img/ellipses/icon_3.png");
+    left: 0;
+    top: -50px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    max-width: 908px;
+    margin-bottom: 70px;
+  }
+
+  &__items {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1100px) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    max-width: 258px;
+
+    @media (max-width: 1100px) {
+      margin-bottom: 50px;
+    }
+
+    &-percent {
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+}
+
+.shield {
+  margin-bottom: 180px;
+
+  &__box {
+    display: flex;
+    padding: 165px 0;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 960px;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  img {
+    margin-right: 94px;
+
+    @media (max-width: 768px) {
+      max-width: 100px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    color: $dark-blue;
+    max-width: 406px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+      text-align: center;
+    }
+
+    &_bold {
+      font-weight: 600;
+    }
+  }
+}
+
+.media {
+  text-align: center;
+  color: $dark-blue;
+  max-width: 960px;
+  margin-bottom: 293px;
+
+  &__ellipse {
+    width: 312px;
+    height: 774px;
+    background-image: url("../img/ellipses/circles-2.png");
+    right: 0;
+    top: -150px;
+
+    @media (max-width: 1400px) {
+      width: 219px;
+    }
+
+    @media (max-width: 1100px) {
+      width: 119px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.infographic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.benefits2 {
+  background: #f5f6f5;
+  padding: 100px 0;
+
+  h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mb50 {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    width: 33.33%;
+    text-align: center;
+    flex-direction: column;
+
+    @media (max-width: 1100px) {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    img {
+      max-height: 100px;
+      margin-bottom: 20px;
+    }
+
+    &-desc {
+      font-size: 20px;
+    }
+  }
+}
+
+.performing {
+  max-width: 960px;
+  padding-top: 145px;
+  padding-bottom: 120px;
+  color: $dark-blue;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  z-index: 1;
+
+  &__ellipse {
+    width: 247px;
+    height: 751px;
+    background-image: url("../img/ellipses/circles-3.png");
+    left: 0;
+    top: -90px;
+    z-index: 1;
+
+    @media (max-width: 1400px) {
+      width: 140px;
+    }
+
+    @media (max-width: 1100px) {
+      width: 80px;
+    }
+
+    &_2 {
+      width: 240px;
+      height: 295px;
+      background-image: url("../img/ellipses/icon_4.png");
+      right: 0;
+      bottom: -65px;
+
+      @media (max-width: 1400px) {
+        width: 140px;
+        height: 195px;
+        bottom: -22px;
+      }
+    }
+  }
+
+  p {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+}
+
+.infographic2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 247px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.testimonials {
+  position: relative;
+  color: $dark-blue;
+  max-width: 960px;
+
+  .glide__arrow {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    top: 120px;
+  }
+
+  .glide__arrow--left {
+    left: -105px;
+  }
+
+  .glide__arrow--right {
+    right: -105px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 57px;
+  }
+
+  &__item {
+    display: flex;
+
+    &-col {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      &_left {
+        padding-right: 39px;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &-logo {
+      margin-bottom: 20px;
+
+      &_1 {
+        width: 208px;
+      }
+
+      &_2 {
+        width: 208px;
+      }
+
+      &_3 {
+        width: 208px;
+      }
+    }
+  }
+}
+
+.footer {
+  padding-top: 167px;
+  padding-bottom: 51px;
+  display: flex;
+  flex-direction: column;
+
+  &__brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__email {
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-blue;
+    margin-bottom: 20px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    align-self: center;
+
+    a {
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

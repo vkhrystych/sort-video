@@ -1,0 +1,19 @@
+{
+  "name": "sort-video-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./styles/style.scss ./styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerionNet/sort-video-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PerionNet/sort-video-landing/issues"
+  },
+  "homepage": "https://github.com/PerionNet/sort-video-landing#readme"
+}
