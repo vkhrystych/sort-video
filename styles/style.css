@@ -453,6 +453,11 @@
   max-width: 960px;
   margin-bottom: 293px;
 }
+@media (max-width: 768px) {
+  .media {
+    margin-bottom: 150px;
+  }
+}
 .media__ellipse {
   width: 312px;
   height: 774px;
@@ -718,6 +723,11 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .footer__brands a img {
+    max-width: 130px;
+  }
 }
 .footer__email {
   text-align: center;

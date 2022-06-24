@@ -463,6 +463,10 @@ $dark-blue: #002149;
   max-width: 960px;
   margin-bottom: 293px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 150px;
+  }
+
   &__ellipse {
     width: 312px;
     height: 774px;
@@ -739,6 +743,12 @@ $dark-blue: #002149;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+
+    @media (max-width: 768px) {
+      a img {
+        max-width: 130px;
+      }
+    }
   }
 
   &__email {
