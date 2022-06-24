@@ -744,6 +744,10 @@ $dark-blue: #002149;
     justify-content: space-between;
     margin-bottom: 32px;
 
+    &_sort {
+      max-width: 175px;
+    }
+
     @media (max-width: 768px) {
       a img {
         max-width: 130px;

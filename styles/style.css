@@ -724,6 +724,9 @@
   justify-content: space-between;
   margin-bottom: 32px;
 }
+.footer__brands_sort {
+  max-width: 175px;
+}
 @media (max-width: 768px) {
   .footer__brands a img {
     max-width: 130px;
