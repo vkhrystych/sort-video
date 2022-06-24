@@ -607,6 +607,7 @@
   z-index: 2;
   width: 40px;
   display: flex;
+  justify-content: flex-end;
 }
 @media (max-width: 1200px) {
   .testimonials .glide__arrow--left {
@@ -628,6 +629,7 @@
   z-index: 2;
   width: 40px;
   display: flex;
+  justify-content: flex-end;
 }
 @media (max-width: 1200px) {
   .testimonials .glide__arrow--right {

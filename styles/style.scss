@@ -625,6 +625,7 @@ $dark-blue: #002149;
     z-index: 2;
     width: 40px;
     display: flex;
+    justify-content: flex-end;
 
     @media (max-width: 1200px) {
       left: -55px;
@@ -644,6 +645,7 @@ $dark-blue: #002149;
     z-index: 2;
     width: 40px;
     display: flex;
+    justify-content: flex-end;
 
     @media (max-width: 1200px) {
       right: -55px;
