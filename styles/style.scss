@@ -670,14 +670,14 @@ $dark-blue: #002149;
 
     &-col {
       width: 50%;
-      display: flex;
-      flex-direction: column;
 
       @media (max-width: 768px) {
         width: 80%;
       }
 
       &_left {
+        display: flex;
+        flex-direction: column;
         padding-right: 39px;
         font-family: "Montserrat";
         font-weight: 600;
@@ -690,6 +690,11 @@ $dark-blue: #002149;
       }
 
       &_right {
+        img {
+          width: 100%;
+          max-width: 500px;
+        }
+
         @media (max-width: 1100px) {
           margin-bottom: 50px;
         }
