@@ -582,6 +582,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 247px;
+  max-width: 1026px;
 }
 .infographic2 img {
   max-width: 100%;
@@ -655,12 +656,16 @@
 }
 .footer__email {
   text-align: center;
+  margin-bottom: 20px;
+}
+.footer__email a {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #002149;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 .footer__socials {
   display: flex;

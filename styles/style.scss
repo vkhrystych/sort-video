@@ -598,6 +598,7 @@ $dark-blue: #002149;
   display: flex;
   justify-content: center;
   padding-bottom: 247px;
+  max-width: 1026px;
 
   img {
     max-width: 100%;
@@ -684,12 +685,17 @@ $dark-blue: #002149;
 
   &__email {
     text-align: center;
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: $dark-blue;
     margin-bottom: 20px;
+
+    a {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $dark-blue;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
   }
 
   &__socials {
