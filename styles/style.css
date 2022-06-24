@@ -679,6 +679,7 @@
 .testimonials__item-col_right img {
   width: 100%;
   max-width: 500px;
+  image-orientation: none;
 }
 @media (max-width: 1100px) {
   .testimonials__item-col_right {
