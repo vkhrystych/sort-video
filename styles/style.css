@@ -605,6 +605,8 @@
 .testimonials .glide__arrow--left {
   left: -105px;
   z-index: 2;
+  width: 40px;
+  display: flex;
 }
 @media (max-width: 1200px) {
   .testimonials .glide__arrow--left {
@@ -624,6 +626,8 @@
 .testimonials .glide__arrow--right {
   right: -105px;
   z-index: 2;
+  width: 40px;
+  display: flex;
 }
 @media (max-width: 1200px) {
   .testimonials .glide__arrow--right {
