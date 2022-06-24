@@ -622,6 +622,7 @@ $dark-blue: #002149;
 
   .glide__arrow--left {
     left: -105px;
+    z-index: 2;
 
     @media (max-width: 1200px) {
       left: -55px;
@@ -638,6 +639,7 @@ $dark-blue: #002149;
 
   .glide__arrow--right {
     right: -105px;
+    z-index: 2;
 
     @media (max-width: 1200px) {
       right: -55px;
