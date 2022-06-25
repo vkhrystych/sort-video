@@ -494,7 +494,7 @@ header {
   text-align: center;
   color: #002149;
   max-width: 960px;
-  margin-bottom: 293px;
+  margin-bottom: 288px;
 }
 @media (max-width: 768px) {
   .media {
@@ -506,7 +506,7 @@ header {
   height: 774px;
   background-image: url("../img/ellipses/circles-2.png");
   right: 0;
-  top: -150px;
+  top: -220px;
 }
 @media (max-width: 1400px) {
   .media__ellipse {
@@ -518,38 +518,38 @@ header {
     width: 119px;
   }
 }
-.media h2 {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 34px;
-  margin-bottom: 30px;
-}
 .media__text {
-  font-size: 28px;
-  line-height: 34px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .infographic {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 180px;
 }
 .infographic img {
   max-width: 100%;
 }
 
 .benefits2 {
-  background: #f5f6f5;
-  padding: 100px 0;
+  margin-bottom: 172px;
 }
 .benefits2 h2 {
-  font-weight: 600;
+  color: #002149;
   text-align: center;
-  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
 }
-.benefits2 .container {
+.benefits2__container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 840px;
+  margin: 0 auto;
 }
 .benefits2 .mb50 {
   margin-bottom: 50px;
@@ -559,6 +559,7 @@ header {
   width: 33.33%;
   text-align: center;
   flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 1100px) {
   .benefits2__item {
@@ -577,13 +578,16 @@ header {
   margin-bottom: 20px;
 }
 .benefits2__item-desc {
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 180px;
+  color: #002149;
 }
 
 .performing {
   max-width: 960px;
-  padding-top: 145px;
-  padding-bottom: 120px;
+  margin-bottom: 160px;
   color: #002149;
   font-weight: 600;
   font-size: 28px;
@@ -595,7 +599,7 @@ header {
   height: 751px;
   background-image: url("../img/ellipses/circles-3.png");
   left: 0;
-  top: -90px;
+  top: -320px;
   z-index: 1;
 }
 @media (max-width: 1400px) {
@@ -613,7 +617,7 @@ header {
   height: 295px;
   background-image: url("../img/ellipses/icon_4.png");
   right: 0;
-  bottom: -65px;
+  bottom: 225px;
 }
 @media (max-width: 1400px) {
   .performing__ellipse_2 {
@@ -622,15 +626,21 @@ header {
     bottom: -22px;
   }
 }
-.performing p {
+.performing__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.performing__text_bold {
   font-weight: 600;
-  margin-bottom: 30px;
 }
 
 .infographic2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 247px;
+  margin-bottom: 160px;
   max-width: 1026px;
 }
 .infographic2 img {
@@ -695,11 +705,11 @@ header {
   }
 }
 .testimonials h2 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
   text-align: center;
-  margin-bottom: 57px;
+  margin-bottom: 60px;
 }
 .testimonials__item {
   display: flex;
