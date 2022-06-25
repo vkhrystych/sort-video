@@ -15,18 +15,24 @@
   </head>
 
   <body>
-    <img src="img/sort-by-perion-logo.png" class="header-sort-logo" />
+    <header>
+      <img src="img/sort-by-perion-logo.png" class="header-sort-logo" />
+    </header>
 
-    <iframe
-      class="intro"
-      src="https://www.youtube-nocookie.com/embed/njX2bu-_Vw4?controls=0"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <div class="intro">
+      <iframe
+        class="intro__video"
+        src="https://www.youtube-nocookie.com/embed/njX2bu-_Vw4?controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
 
-    <main>
+      <a class="intro__arrow" href="#main"></a>
+    </div>
+
+    <main id="main">
       <div class="container_big">
         <div class="ellipse info__ellipse_1"></div>
 
@@ -40,13 +46,12 @@
 
           <div class="info__meet">
             <span class="info__meet-text">MEET</span>
-            <img src="img/logo.svg" />
+            <img src="img/sort-logo-small.svg" />
           </div>
 
           <div class="info__description">
-            Cookieless targeting that’s driving results up to
-            <span class="info__description_bold">x2 higher</span> than
-            cookie-based approaches
+            Cookieless targeting that’s driving results up to x2 higher than
+            cookie-based approaches!
           </div>
 
           <div class="info__disclaimer">

@@ -10,11 +10,15 @@ $dark-blue: #002149;
   font-family: "Montserrat";
 }
 
+header {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-sort-logo {
-  max-width: 118px;
-  position: absolute;
-  top: 19px;
-  left: 39px;
+  max-width: 134px;
 }
 
 .container {
@@ -34,15 +38,37 @@ $dark-blue: #002149;
 }
 
 .intro {
-  height: 100vh;
-  width: 100%;
+  position: relative;
 
-  @media (max-width: 1100px) {
-    height: 500px;
+  &__video {
+    height: calc(100vh - 200px);
+    width: 100%;
+
+    @media (max-width: 1100px) {
+      height: 500px;
+    }
+
+    @media (max-width: 768px) {
+      height: 300px;
+    }
   }
 
-  @media (max-width: 768px) {
-    height: 300px;
+  &__arrow {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    background-image: url("../img/arrow-down.svg");
+    cursor: pointer;
+    position: absolute;
+    bottom: -27px;
+    left: calc(50% - 27px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
   }
 }
 
@@ -69,7 +95,7 @@ $dark-blue: #002149;
 
 .info {
   padding-top: 40px;
-  padding-bottom: 200px;
+  padding-bottom: 180px;
 
   &__ellipse {
     &_1 {
@@ -95,10 +121,12 @@ $dark-blue: #002149;
   }
 
   h1 {
-    font-size: 65px;
-    line-height: 93px;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 83px;
+    color: #002149;
     color: $dark-blue;
-    margin-bottom: 119px;
+    margin-bottom: 24px;
 
     @media (max-width: 1100px) {
       font-size: 45px;
@@ -111,17 +139,21 @@ $dark-blue: #002149;
   }
 
   h2 {
-    font-size: 42px;
-    line-height: 51px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 46px;
     color: $dark-blue;
-    margin-bottom: 64px;
+    max-width: 970px;
+    margin-bottom: 124px;
 
     @media (max-width: 1100px) {
       font-size: 28px;
+      max-width: 100%;
     }
 
     @media (max-width: 768px) {
       font-size: 24px;
+      max-width: 100%;
     }
   }
 
@@ -132,18 +164,20 @@ $dark-blue: #002149;
 
     &-text {
       color: $dark-blue;
+      font-weight: 700;
       font-size: 42px;
-      margin-right: 5px;
+      margin-right: 22px;
       margin-bottom: 5px;
     }
   }
 
   &__description {
-    max-width: 597px;
+    max-width: 683px;
     color: $dark-blue;
+    font-weight: 700;
     font-size: 26px;
-    margin-bottom: 38px;
-    line-height: 31.69px;
+    line-height: 32px;
+    margin-bottom: 36px;
 
     @media (max-width: 1100px) {
       font-size: 20px;
@@ -181,18 +215,20 @@ $dark-blue: #002149;
 
 .benefits {
   text-align: center;
-  padding-bottom: 150px;
+  max-width: 1080px;
+  padding-bottom: 180px;
 
   @media (max-width: 1100px) {
     padding-bottom: 0;
   }
 
   h2 {
-    font-weight: 600;
-    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
     line-height: 34px;
     color: $dark-blue;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
   }
 
   &__container {
@@ -209,15 +245,15 @@ $dark-blue: #002149;
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 276px;
+    max-width: 320px;
 
     @media (max-width: 1100px) {
       margin-bottom: 50px;
     }
 
     img {
-      max-width: 140px;
-      margin-bottom: 31px;
+      max-width: 96px;
+      margin-bottom: 20px;
 
       @media (max-width: 1100px) {
         max-width: 110px;
@@ -225,17 +261,17 @@ $dark-blue: #002149;
     }
 
     &-heading {
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 27px;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 700;
       color: $dark-blue;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
 
     &-description {
       font-weight: 400;
       font-size: 18px;
-      line-height: 22px;
+      line-height: 26px;
       text-align: center;
       color: $dark-blue;
     }
@@ -243,23 +279,23 @@ $dark-blue: #002149;
 }
 
 .future {
-  padding-top: 150px;
-  padding-bottom: 150px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  padding-bottom: 160px;
 
   &__ellipse {
     background-image: url("../img/ellipses/icon_1.png");
     left: 0;
-    top: 0px;
+    top: -130px;
   }
 
   h2 {
-    max-width: 629px;
-    font-weight: 400;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 26px;
     line-height: 34px;
+    max-width: 700px;
+    text-transform: uppercase;
     text-align: center;
     color: $dark-blue;
     margin-bottom: 60px;
@@ -277,14 +313,14 @@ $dark-blue: #002149;
   &__benefit {
     flex-shrink: 0;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 28px;
     color: $dark-blue;
     padding: 32px;
-    padding-bottom: 72px;
+    padding-bottom: 60px;
     max-width: 450px;
     background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
 
     &-text_bold {
       font-weight: 600;
@@ -303,29 +339,31 @@ $dark-blue: #002149;
 
 .about {
   color: $dark-blue;
-  text-align: center;
   max-width: 760px;
-  padding-bottom: 150px;
+  text-align: center;
+  padding-bottom: 160px;
 
   &__ellipse {
     background-image: url("../img/ellipses/icon_2.png");
     right: 0;
-    top: 50px;
+    top: 100px;
   }
 
   h2 {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
   }
 
   &__description {
-    font-size: 24px;
-    line-height: 34px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
 
     @media (max-width: 1100px) {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     &_bold {
@@ -341,9 +379,9 @@ $dark-blue: #002149;
 
   &__content {
     max-width: 960px;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 45px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
     text-align: center;
     background: #00214a;
     backdrop-filter: blur(172px);
@@ -361,7 +399,7 @@ $dark-blue: #002149;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 130px;
+  padding-bottom: 160px;
   color: $dark-blue;
 
   @media (max-width: 768px) {
@@ -371,20 +409,22 @@ $dark-blue: #002149;
   &__ellipse {
     background-image: url("../img/ellipses/icon_3.png");
     left: 0;
-    top: -50px;
+    top: -170px;
   }
 
   h2 {
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 26px;
     line-height: 34px;
+    text-transform: uppercase;
     text-align: center;
     max-width: 908px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   &__items {
-    width: 80%;
+    width: 100%;
+    max-width: 980px;
     display: flex;
     justify-content: space-between;
 
@@ -395,17 +435,18 @@ $dark-blue: #002149;
   }
 
   &__item {
+    font-weight: 400;
     font-size: 18px;
-    max-width: 258px;
+    line-height: 26px;
+    text-align: center;
+    max-width: 300px;
 
     @media (max-width: 1100px) {
       margin-bottom: 50px;
     }
 
     &-percent {
-      font-weight: 900;
-      font-size: 32px;
-      line-height: 39px;
+      font-weight: 700;
     }
   }
 }
@@ -415,12 +456,13 @@ $dark-blue: #002149;
 
   &__box {
     display: flex;
-    padding: 165px 0;
-    background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    max-width: 960px;
-    justify-content: center;
+    padding: 80px 0;
     margin: 0 auto;
+    max-width: 960px;
+    align-items: center;
+    background: #ffffff;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -430,7 +472,8 @@ $dark-blue: #002149;
   }
 
   img {
-    margin-right: 94px;
+    width: 183px;
+    margin-right: 70px;
 
     @media (max-width: 768px) {
       max-width: 100px;
@@ -443,8 +486,9 @@ $dark-blue: #002149;
     color: $dark-blue;
     max-width: 406px;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: uppercase;
 
     @media (max-width: 768px) {
       font-size: 22px;
