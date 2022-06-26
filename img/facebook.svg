@@ -1,9 +1,4 @@
-<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="34" height="34" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_190_115" transform="scale(0.0294118)"/>
-</pattern>
-<image id="image0_190_115" width="34" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABHNCSVQICAgIfAhkiAAAA2tJREFUWEfFWOtZGzEQnLkGIBVE5wYCFWAqgFQQ0gFUgKkgpgJMBTgVABUEGrBEBZAGtPlGd2cuZ/ssJ/cl+sPDsjQ7+5oVscNyzu0DOCkKnJpBvzuSTkeY2ROANxIhRswBPIYQ3nKPZ85G59yYxCXJcXUpXgALAIIurv93AGCfpH7uVefaPEZchBDSnr7VC8Q5d0DimwDoctKmMeIhhCDrNy59ryhwBvCsAmWzGHHVB2gjEOfcWQ2CgE0WizDdZlX3c7myKHAO8NzSwvEmI9YCGY3cJcCJmT2a4XQXX68DWzM7I/kpRvsaQph1960AGY3cBOClmd16H0TtIEvskJiTPFoH5jcgckdR8GZoEG1LytIpvj523bQEUtN3D+DZ+5CyI2eJQTMctfea4XYd/dpTMcMnwPbMUDZuXwIpS3dP8jBGc7kxIevk91XAdrVYhMkmQ6qs4g/gfV8CojpRFLwH7CI3O5xzp0XBu/WX9QPRd8rSKXi/xGhiJSQgYgNg6b1PVTJnNUHd7DWzZwWj/q5rzUPfOc45VxR8MrO5koJVrvN1FzZ0QRdIm+YcQxpWABx5H0oBSZkSox1uq5jtC4YA0r6bZenmAA9y3VLFE47MMG56jwCa2QOJ5I4YU8PrdU2TQbU3rgQkfSE3ZVeZWHVEjKZSvhVI5eLyTb1IQLxadm4VHRpIQwRHo9J2CbS6GaqzOhIf37NmKQ0kE85z4+2PgTQXDxGsdeYkF8o1qv3B+3Cam3ZDpW8XyE7BOjQjdWhcixFpgxPvw4d/zUhdXb2KqQpa6hn/uaClytqU+OvFIpznsjJEsLaLadP01KxULZf6YBugvwXSckuSDI0MUCeUr3p1xJC9pqt/2sIoBW2f0h4KSEv/LA1vS8VGH/gaTO+U9l5hK3hmmG2Sh20DWpL0xfugYSytrnhOEk6d1PtwvC1Odv28VvKSpGVXkq6MEy0l/5TDTC6YmombGsS424vWDlg1mKmZvZrhc24D2wSqnp3vSDJGWwGx4pquL4uCKv9Zs+s6EEpREmJhLE0rMbVpQtg2hDezqyY/PTlouhe475sO1OWqSXq6AKhG+hOwad940ctIhx1ZNiHTwenJQcAAdF8FDkjq3SQ9XZDpFWCaMydlvY+sukzWYt8My/RLVjEBSw81OW8i7XN/AVazWHlWgnnaAAAAAElFTkSuQmCC"/>
-</defs>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#002149"/>
+<path d="M16.9347 25.3331V16.8183H19.7928L20.2207 13.5H16.9347V11.3813C16.9347 10.4206 17.2015 9.76581 18.5793 9.76581L20.3365 9.765V6.79712C20.0325 6.75682 18.9895 6.6665 17.776 6.6665C15.2425 6.6665 13.508 8.21287 13.508 11.0528V13.5001H10.6426V16.8184H13.508V25.3332L16.9347 25.3331Z" fill="white"/>
 </svg>

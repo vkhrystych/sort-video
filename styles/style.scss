@@ -135,6 +135,16 @@ header {
     line-height: 18px;
     color: $dark-blue;
     margin-bottom: 28px;
+    outline: none;
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
+
+    &:focus {
+      background-color: #fff;
+      border: 1px solid #5fc7e0;
+    }
 
     &::placeholder {
       color: $dark-blue;
@@ -850,6 +860,17 @@ header {
     font-size: 14px;
     line-height: 18px;
     color: $dark-blue;
+    outline: none;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
+
+    &:focus {
+      background-color: #fff;
+      border: 1px solid #5fc7e0;
+    }
 
     &::placeholder {
       color: $dark-blue;
@@ -896,10 +917,9 @@ header {
     margin-bottom: 20px;
 
     a {
-      font-family: "Inter";
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
       color: $dark-blue;
       margin-bottom: 20px;
       text-decoration: none;

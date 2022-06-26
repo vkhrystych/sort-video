@@ -135,6 +135,14 @@ header {
   line-height: 18px;
   color: #002149;
   margin-bottom: 28px;
+  outline: none;
+}
+.subscribe__input:hover {
+  background-color: #f4f4f4;
+}
+.subscribe__input:focus {
+  background-color: #fff;
+  border: 1px solid #5fc7e0;
 }
 .subscribe__input::placeholder {
   color: #002149;
@@ -827,6 +835,15 @@ header {
   font-size: 14px;
   line-height: 18px;
   color: #002149;
+  outline: none;
+  background-color: #fff;
+}
+.subscribe-big__input:hover {
+  background-color: #f4f4f4;
+}
+.subscribe-big__input:focus {
+  background-color: #fff;
+  border: 1px solid #5fc7e0;
 }
 .subscribe-big__input::placeholder {
   color: #002149;
@@ -867,10 +884,9 @@ header {
   margin-bottom: 20px;
 }
 .footer__email a {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   color: #002149;
   margin-bottom: 20px;
   text-decoration: none;
