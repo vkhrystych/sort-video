@@ -38,7 +38,7 @@ header {
   position: relative;
 }
 .intro__video {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 150px);
   width: 100%;
 }
 @media (max-width: 1100px) {
@@ -171,6 +171,9 @@ header {
   margin-right: 22px;
   margin-bottom: 5px;
 }
+.info__meet-logo {
+  max-width: 130px;
+}
 .info__description {
   max-width: 683px;
   color: #002149;
@@ -212,69 +215,6 @@ header {
     font-size: 18px;
     line-height: normal;
   }
-}
-
-.benefits {
-  text-align: center;
-  max-width: 1080px;
-  padding-bottom: 180px;
-}
-@media (max-width: 1100px) {
-  .benefits {
-    padding-bottom: 0;
-  }
-}
-.benefits h2 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 34px;
-  color: #002149;
-  margin-bottom: 60px;
-}
-.benefits__container {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 1100px) {
-  .benefits__container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.benefits__item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 320px;
-}
-@media (max-width: 1100px) {
-  .benefits__item {
-    margin-bottom: 50px;
-  }
-}
-.benefits__item img {
-  max-width: 96px;
-  margin-bottom: 20px;
-}
-@media (max-width: 1100px) {
-  .benefits__item img {
-    max-width: 110px;
-  }
-}
-.benefits__item-heading {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #002149;
-  margin-bottom: 20px;
-}
-.benefits__item-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  color: #002149;
 }
 
 .future {
@@ -519,9 +459,9 @@ header {
   }
 }
 .media__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 600;
 }
 
 .infographic {
