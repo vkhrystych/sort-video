@@ -93,18 +93,17 @@ const addOnClickHandlers = () => {
   document.querySelector("#subscribe-close-btn").onclick = closeSubscribePopup;
 };
 
-const observer = new IntersectionObserver(
-  function (entries) {
-    if (entries[0].isIntersecting === true) {
-      if (!isSubsribePopupWasShown) {
-        openSubscribePopup();
-      }
-    }
-  },
-  { threshold: [0] }
-);
+const addHeadingScrollObserver = () => {
+  window.onscroll = function () {
+    if (isSubsribePopupWasShown) return;
 
-observer.observe(document.querySelector("#info-heading"));
+    const bodyRect = document.querySelector("body").getBoundingClientRect();
+
+    if (bodyRect.y < -250) {
+      openSubscribePopup();
+    }
+  };
+};
 
 const initSlider = () => {
   new Glide(".glide", {
@@ -116,6 +115,7 @@ const initApp = () => {
   initSlider();
   addOnClickHandlers();
   addSmoothScollToAnchorElements();
+  addHeadingScrollObserver();
 };
 
 initApp();
