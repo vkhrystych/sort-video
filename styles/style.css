@@ -34,6 +34,29 @@ header {
   margin: 0 auto;
 }
 
+.ellipse {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.ellipse-icon {
+  width: 240px;
+  height: 295px;
+}
+@media (max-width: 1400px) {
+  .ellipse-icon {
+    width: 140px;
+    height: 195px;
+  }
+}
+@media (max-width: 1100px) {
+  .ellipse-icon {
+    display: none;
+  }
+}
+
 .intro {
   position: relative;
 }
@@ -70,27 +93,51 @@ header {
   }
 }
 
-.ellipse {
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: -1;
+.subscribe {
+  max-width: 980px;
+  margin: 0 auto;
 }
-
-.ellipse-icon {
-  width: 240px;
-  height: 295px;
+.subscribe__content {
+  background: #ffffff;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 180px;
+  flex-direction: column;
+  align-items: center;
 }
-@media (max-width: 1400px) {
-  .ellipse-icon {
-    width: 140px;
-    height: 195px;
-  }
+.subscribe h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #002149;
+  margin-bottom: 28px;
 }
-@media (max-width: 1100px) {
-  .ellipse-icon {
-    display: none;
-  }
+.subscribe__input {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #002149;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #002149;
+  margin-bottom: 28px;
+}
+.subscribe__input::placeholder {
+  color: #002149;
+}
+.subscribe__submit-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  padding: 12px 58px;
+  background-color: #002149;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .info {
