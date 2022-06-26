@@ -15,6 +15,32 @@
   </head>
 
   <body>
+    <section class="subscribe hidden" id="subscribe-popup">
+      <form class="subscribe__content">
+        <button
+          class="subscribe__close-btn"
+          id="subscribe-close-btn"
+          type="button"
+        >
+          <img src="img/close-icon.svg" alt="close button icon" />
+        </button>
+
+        <h2>Subscribe to get the latest updates</h2>
+
+        <input
+          id="subscribe-email"
+          placeholder="Enter your email"
+          class="subscribe__input"
+          type="email"
+          required
+        />
+
+        <button class="subscribe__submit-btn" type="submit" id="subscribe-btn">
+          Subscribe
+        </button>
+      </form>
+    </section>
+
     <header>
       <img src="img/sort-by-perion-logo.png" class="header-sort-logo" />
     </header>
@@ -39,7 +65,7 @@
         <section class="info container">
           <h1>Start Following The Privacy Shield</h1>
 
-          <h2>
+          <h2 id="info-heading">
             No more choosing between consumer privacy and excellent marketing
             performance.
           </h2>
@@ -61,28 +87,6 @@
           </div>
         </section>
       </div>
-
-      <section class="subscribe">
-        <form class="subscribe__content">
-          <h2>Subscribe to get the latest updates</h2>
-
-          <input
-            id="subscribe-email"
-            placeholder="Enter your email"
-            class="subscribe__input"
-            type="email"
-            required
-          />
-
-          <button
-            class="subscribe__submit-btn"
-            type="submit"
-            id="subscribe-btn"
-          >
-            Subscribe
-          </button>
-        </form>
-      </section>
 
       <div class="container_big">
         <div class="future__ellipse ellipse ellipse-icon"></div>

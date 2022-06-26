@@ -6,9 +6,25 @@ const base = new Airtable({ apiKey: airtable_api_key }).base(dbId);
 const tableId = "tbllcKAtFuCUhkoF0";
 const tableEmailFieldId = "fldgKzvRxexpzn3FH";
 
+let isSubsribePopupWasShown = false;
+
 const headers = new Headers({
   Authorization: `Bearer ${airtable_api_key}`,
 });
+
+const openSubscribePopup = () => {
+  const subscribePopup = document.querySelector("#subscribe-popup");
+
+  subscribePopup.classList.remove("hidden");
+
+  isSubsribePopupWasShown = true;
+};
+
+const closeSubscribePopup = () => {
+  const subscribePopup = document.querySelector("#subscribe-popup");
+
+  subscribePopup.classList.add("hidden");
+};
 
 const addEmailToAirtable = (emailValue) => {
   base("Emails").create(
@@ -30,6 +46,7 @@ const addEmailToAirtable = (emailValue) => {
         const subscribeInput = document.querySelector("#subscribe-email");
 
         subscribeInput.value = "";
+        closeSubscribePopup();
       });
     }
   );
@@ -72,7 +89,22 @@ const addSmoothScollToAnchorElements = () => {
 
 const addOnClickHandlers = () => {
   document.querySelector("#subscribe-btn").onclick = onSubscribeBtnClick;
+
+  document.querySelector("#subscribe-close-btn").onclick = closeSubscribePopup;
 };
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === true) {
+      if (!isSubsribePopupWasShown) {
+        openSubscribePopup();
+      }
+    }
+  },
+  { threshold: [0] }
+);
+
+observer.observe(document.querySelector("#info-heading"));
 
 const initSlider = () => {
   new Glide(".glide", {
