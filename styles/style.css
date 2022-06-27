@@ -366,9 +366,11 @@ header {
 
 .about {
   color: #002149;
-  max-width: 760px;
   text-align: center;
   padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about__ellipse {
   background-image: url("../img/ellipses/icon_2.png");
@@ -376,13 +378,15 @@ header {
   top: 100px;
 }
 .about h2 {
-  font-weight: 700;
   font-size: 26px;
+  max-width: 780px;
+  font-weight: 700;
   line-height: 34px;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
 .about__description {
+  max-width: 760px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -471,6 +475,8 @@ header {
 }
 .study__item-percent {
   font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .shield {
@@ -484,7 +490,7 @@ header {
   align-items: center;
   background: #ffffff;
   justify-content: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
   .shield__box {
@@ -613,7 +619,7 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  max-width: 180px;
+  max-width: 210px;
   color: #002149;
 }
 
@@ -682,7 +688,7 @@ header {
 .testimonials {
   position: relative;
   color: #002149;
-  max-width: 1320px;
+  max-width: 1130px;
   margin-bottom: 160px;
 }
 @media (max-width: 1100px) {
@@ -786,11 +792,13 @@ header {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
+  padding-top: 20px;
   line-height: 26px;
 }
 @media (max-width: 1100px) {
   .testimonials__item-col_right {
     padding-right: 0;
+    padding-top: 0;
   }
 }
 .testimonials__item-logo {
@@ -831,7 +839,7 @@ header {
 }
 .subscribe-big h3 {
   color: #002149;
-  margin-bottom: 58px;
+  margin-bottom: 28px;
 }
 .subscribe-big__form {
   max-width: 514px;
@@ -896,6 +904,9 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 32px;
+}
+.footer__brands_perion {
+  max-width: 154px;
 }
 .footer__brands_sort {
   max-width: 175px;
