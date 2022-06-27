@@ -23,7 +23,7 @@ header {
   max-width: 1205px;
   position: relative;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .container {
     padding: 0 20px;
   }
@@ -61,8 +61,9 @@ header {
   position: relative;
 }
 .intro__video {
-  height: calc(100vh - 150px);
   width: 100%;
+  aspect-ratio: 16/9;
+  max-height: calc(100vh - 150px);
 }
 @media (max-width: 1100px) {
   .intro__video {
@@ -689,7 +690,13 @@ header {
   position: relative;
   color: #002149;
   max-width: 1130px;
+  width: 100%;
   margin-bottom: 160px;
+}
+@media (min-width: 1100px) and (max-width: 1350px) {
+  .testimonials {
+    max-width: 900px;
+  }
 }
 @media (max-width: 1100px) {
   .testimonials {
@@ -836,10 +843,12 @@ header {
   line-height: 24px;
   color: #002149;
   margin-bottom: 6px;
+  text-align: center;
 }
 .subscribe-big h3 {
   color: #002149;
   margin-bottom: 28px;
+  text-align: center;
 }
 .subscribe-big__form {
   max-width: 514px;
